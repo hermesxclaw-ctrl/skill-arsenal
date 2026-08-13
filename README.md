@@ -16,6 +16,7 @@ A curated collection of SKILL.md files written to a strict authoring contract, v
 | **[cron-ops](skills/devops/cron-ops/SKILL.md)** | DevOps | Resilient scheduled jobs: idempotency, loud failure, watchdogs, and retry taxonomy. Turns cron from a liability into infrastructure. |
 | **[service-hardening](skills/devops/service-hardening/SKILL.md)** | DevOps | Production hardening: graceful shutdown, honest health endpoints, classified retries, circuit breakers, bounded resources. |
 | **[skillcraft](skills/meta/skillcraft/SKILL.md)** | Meta | The discipline of writing skills that change behavior — trigger discipline, completion criteria, anti-sediment rules. The skill that governs all the others. |
+| **[design-scholar](skills/creative/design-scholar/SKILL.md)** | Creative | Purpose-driven UI, web, logo, and human-vs-AI scholarship — 14 chapters (Rams, Norman, Refactoring UI, Weinschenk, Airey/Rand, Minecraft 16×16 pixel craft, taste). Makes sites feel venue-specific not copy-paste. |
 
 ## 🚀 Install
 
@@ -57,6 +58,23 @@ Want to add a skill? Follow [`skillcraft`](skills/meta/skillcraft/SKILL.md) — 
 2. Write trigger-first description, numbered steps with completion criteria, pitfalls, verification checklist
 3. Run `python scripts/validate_skills.py --strict` until green
 4. Open a PR — CI will check it again
+
+## 🧠 Vault — Obsidian Brain (all in one)
+
+This repo also ships the **vault** that taught these skills — `vault/` is the live mirror of `hermes-workspace/hermes-brain` at publish time:
+
+- `vault/06_library/design-scholar.md` — scholar index (14 chapters + glossary + cheatsheet)
+- `vault/07_daily/` — daily memory logs (decision traces, not just outcomes)
+- `vault/01_self/` / `02_projects/caldwell-barber-shop.md` / `05_workflows/` / `_index/` — self-model + project truth
+
+Other AIs: load `skills/creative/design-scholar/references/<file>.md` for chapter detail, or read `vault/` for narrative. Install still covers skills:
+
+```bash
+hermes skills install github:hermesxclaw-ctrl/skill-arsenal
+# brain consumers: git clone and read vault/ alongside skills/
+```
+
+Last sync: `2026-08-12` — scholar repack from tonights research (Rams, Norman, Refactoring 50ch, Weinschenk 100, Airey/Rand, 16×16, Glass/Maeda). Re-sync with `xcopy /E /I hermes-brain vault`.
 
 ## 📄 License
 
